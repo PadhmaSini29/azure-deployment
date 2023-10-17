@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://hips.hearstapps.com/hmg-prod/images/best-fall-movies-1659459329.jpg?crop=0.8297972654408298xw:1xh;center,top&resize=1200:*') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Menu Styles */
+.menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #0056b3;
+}
+
+.login-page,
+.reservation-page {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.login-page {
+    background-color: #f0f0f0;
+}
+
+.login-page:hover,
+.reservation-page:hover {
+    transform: scale(1.02);
+}
+
+/* Login Page Styles */
+.login-page {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-page h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Reservation Page Styles */
+.reservation-page {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-page h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movie-details {
+    text-align: left;
+}
+
+.movie-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ticket-quantity, .theater {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.star-rating .fa-star {
+    color: #fdd835;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.star-rating .fa-star[data-value="0.5"]::before {
+    content: '\f089'; /* Half star icon */
+}
+
+.star-rating .fa-star-empty::before {
+    content: '\f006'; /* Full star icon */
+    color: #ccc;
+}
+
+.star-rating .fa-star:hover {
+    transform: scale(1.1);
+}
+
+.seat {
+    background-color: #444451;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+.seat.selected {
+    background-color: green;
+  }
+  
+.seat.sold {
+    background-color: #d100c0;
+  }
+  
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+  }
+  
+.seat:nth-last-of-type(2) {
+    margin-left: 18px;
+  }
+  
+.seat:not(.sold):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+.showcase .seat:not(.sold):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  
+.showcase {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+.showcase li small {
+    margin-left: 2px;
+  }
+  
+.row {
+    display: flex;
+  }
+  
+.screen {
+    background-color: #000000;
+    height: 120px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-48deg);
+    box-shadow: 0 3px 10px rgba(252, 250, 250, 0.7);
+  }
+  
+p.text{
+      margin: 5px 0;
+  }
+  
+p.text span{
+      color: rgb(158, 248, 158);
+  }
+/* Billing Page Styles */
+.billing-page {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.billing-page h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.billing-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.billing-form button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.billing-form button:hover {
+    background-color: #0056b3;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+
+
